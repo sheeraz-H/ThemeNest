@@ -28,7 +28,7 @@ $folders = @(
 
 foreach ($folder in $folders) {
     New-Item -ItemType Directory -Force -Path $folder | Out-Null
-    Write-Host "✅ Created folder: $folder" -ForegroundColor Green
+    Write-Host " Created folder: $folder" -ForegroundColor Green
 }
 
 # ============================================
@@ -117,7 +117,7 @@ $files = @(
 
 foreach ($file in $files) {
     New-Item -ItemType File -Force -Path $file | Out-Null
-    Write-Host "✅ Created file: $file" -ForegroundColor Cyan
+    Write-Host " Created file: $file" -ForegroundColor Cyan
 }
 
 # ============================================
@@ -140,7 +140,7 @@ Text Domain: my-custom-theme
 */
 "@
 Set-Content -Path "$basePath\style.css" -Value $styleContent
-Write-Host "✅ Populated: style.css" -ForegroundColor Yellow
+Write-Host " Populated: style.css" -ForegroundColor Yellow
 
 # ============================================
 # ADD CONTENT TO INDEX.PHP
@@ -162,7 +162,7 @@ $indexContent = @"
 <?php get_footer(); ?>
 "@
 Set-Content -Path "$basePath\index.php" -Value $indexContent
-Write-Host "✅ Populated: index.php" -ForegroundColor Yellow
+Write-Host " Populated: index.php" -ForegroundColor Yellow
 
 # ============================================
 # ADD CONTENT TO FUNCTIONS.PHP
@@ -198,7 +198,7 @@ require_once MYTHEME_DIR . '/inc/shortcodes.php';
 require_once MYTHEME_DIR . '/inc/class-walker-nav.php';
 "@
 Set-Content -Path "$basePath\functions.php" -Value $functionsContent
-Write-Host "✅ Populated: functions.php" -ForegroundColor Yellow
+Write-Host " Populated: functions.php" -ForegroundColor Yellow
 
 # ============================================
 # ADD CONTENT TO .GITIGNORE
@@ -270,7 +270,7 @@ temp/
 *.orig
 "@
 Set-Content -Path "$basePath\.gitignore" -Value $gitignoreContent
-Write-Host "✅ Populated: .gitignore" -ForegroundColor Yellow
+Write-Host " Populated: .gitignore" -ForegroundColor Yellow
 
 # ============================================
 # ADD CONTENT TO HEADER.PHP
@@ -304,7 +304,7 @@ $headerContent = @"
 </header>
 "@
 Set-Content -Path "$basePath\header.php" -Value $headerContent
-Write-Host "✅ Populated: header.php" -ForegroundColor Yellow
+Write-Host " Populated: header.php" -ForegroundColor Yellow
 
 # ============================================
 # ADD CONTENT TO FOOTER.PHP
@@ -320,7 +320,7 @@ $footerContent = @"
 </html>
 "@
 Set-Content -Path "$basePath\footer.php" -Value $footerContent
-Write-Host "✅ Populated: footer.php" -ForegroundColor Yellow
+Write-Host " Populated: footer.php" -ForegroundColor Yellow
 
 # ============================================
 # ADD CONTENT TO PACKAGE.JSON
@@ -354,17 +354,17 @@ $packageContent = @"
 }
 "@
 Set-Content -Path "$basePath\package.json" -Value $packageContent
-Write-Host "✅ Populated: package.json" -ForegroundColor Yellow
+Write-Host " Populated: package.json" -ForegroundColor Yellow
 
 # ============================================
 # DONE!
 # ============================================
 Write-Host ""
 Write-Host "============================================" -ForegroundColor Magenta
-Write-Host " 🎉 Theme '$themeName' Generated Successfully!" -ForegroundColor Magenta
+Write-Host " Theme '$themeName' Generated Successfully!" -ForegroundColor Magenta
 Write-Host "============================================" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "📂 Next Steps:" -ForegroundColor White
+Write-Host " Next Steps:" -ForegroundColor White
 Write-Host "  1. cd $themeName" -ForegroundColor Gray
 Write-Host "  2. composer install" -ForegroundColor Gray
 Write-Host "  3. npm install" -ForegroundColor Gray

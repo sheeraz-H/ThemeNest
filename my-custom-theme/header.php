@@ -18,7 +18,6 @@
                 'theme_location' => 'primary-menu',
                 'menu_class'     => 'nav-menu',
                 'container'      => false,
-                'walker'         => new My_Custom_Walker(),
             ) );
             ?>
         </nav>
