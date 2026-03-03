@@ -19,6 +19,14 @@ function mytheme_scripts() {
         null
     );
 
+    // Font Awesome Icons
+        wp_enqueue_style(
+    'font-awesome',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css',
+    array(),
+    '6.5.0'
+    );
+
     // Main stylesheet
     wp_enqueue_style(
         'mytheme-style',

@@ -5,7 +5,7 @@
             <!-- Col 1 - About -->
             <div class="footer-col">
                 <h4><?php bloginfo( 'name' ); ?></h4>
-                <p>Your go-to destination for books and digital products. Instant downloads, lifetime access.</p>
+                <p>Your go-to destination for clothing and fashion. Shop the latest trends.</p>
             </div>
 
             <!-- Col 2 - Quick Links -->
@@ -25,10 +25,10 @@
             <div class="footer-col">
                 <h4>Categories</h4>
                 <ul>
-                    <li><a href="#">Fiction</a></li>
-                    <li><a href="#">Non-Fiction</a></li>
-                    <li><a href="#">eBooks</a></li>
-                    <li><a href="#">Online Courses</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Accessories</a></li>
                 </ul>
             </div>
 
@@ -37,7 +37,7 @@
                 <h4>Support</h4>
                 <ul>
                     <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Download Help</a></li>
+                    <li><a href="#">Shipping Info</a></li>
                     <li><a href="#">Refund Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
