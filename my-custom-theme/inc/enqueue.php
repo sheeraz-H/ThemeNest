@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function mytheme_scripts() {
 
-    // Google Fonts — Playfair Display + Lato
+    // Google Fonts
     wp_enqueue_style(
         'mytheme-fonts',
         'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap',
@@ -43,3 +43,6 @@ function mytheme_scripts() {
     ) );
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_scripts' );
+
+// Remove WooCommerce default styles and use ours
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );

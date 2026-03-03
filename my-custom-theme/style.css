@@ -328,3 +328,225 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================
+   8. WOOCOMMERCE BASE STYLES
+============================================ */
+
+/* Shop Page Grid */
+.woocommerce ul.products {
+    display:               grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:                   30px;
+    padding:               0;
+    margin:                0;
+    list-style:            none;
+}
+
+/* Product Card */
+.woocommerce ul.products li.product {
+    background:    var(--white);
+    border-radius: var(--radius);
+    box-shadow:    var(--shadow);
+    overflow:      hidden;
+    transition:    var(--transition);
+    padding:       0;
+}
+
+.woocommerce ul.products li.product:hover {
+    transform:  translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* Product Image */
+.woocommerce ul.products li.product img {
+    width:      100%;
+    height:     250px;
+    object-fit: cover;
+}
+
+/* Product Title */
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-family:   var(--font-head);
+    font-size:     1.1rem;
+    color:         var(--primary);
+    padding:       15px 15px 5px;
+    margin:        0;
+}
+
+/* Product Price */
+.woocommerce ul.products li.product .price {
+    color:       var(--secondary);
+    font-weight: 700;
+    font-size:   1.1rem;
+    padding:     0 15px;
+    display:     block;
+}
+
+/* Add to Cart Button */
+.woocommerce ul.products li.product .button {
+    display:          block;
+    margin:           15px;
+    padding:          10px;
+    background-color: var(--accent);
+    color:            var(--white);
+    border-radius:    var(--radius);
+    font-weight:      700;
+    text-align:       center;
+    border:           none;
+    cursor:           pointer;
+    transition:       var(--transition);
+}
+
+.woocommerce ul.products li.product .button:hover {
+    background-color: #219a52;
+    color:            var(--white);
+}
+
+/* ============================================
+   9. SINGLE PRODUCT PAGE
+============================================ */
+.woocommerce div.product {
+    display:               grid;
+    grid-template-columns: 1fr 1fr;
+    gap:                   50px;
+    align-items:           start;
+}
+
+.woocommerce div.product .woocommerce-product-gallery {
+    border-radius: var(--radius);
+    overflow:      hidden;
+    box-shadow:    var(--shadow);
+}
+
+.woocommerce div.product .product_title {
+    font-size:     2rem;
+    margin-bottom: 10px;
+}
+
+.woocommerce div.product .price {
+    color:         var(--secondary);
+    font-size:     1.8rem;
+    font-weight:   700;
+    margin-bottom: 20px;
+    display:       block;
+}
+
+.woocommerce div.product .woocommerce-product-details__short-description {
+    color:         #666;
+    margin-bottom: 25px;
+    line-height:   1.8;
+}
+
+/* Buy Button */
+.woocommerce div.product .single_add_to_cart_button {
+    background-color: var(--secondary);
+    color:            var(--white);
+    padding:          15px 40px;
+    border-radius:    var(--radius);
+    font-size:        1.1rem;
+    font-weight:      700;
+    border:           none;
+    cursor:           pointer;
+    transition:       var(--transition);
+    width:            100%;
+}
+
+.woocommerce div.product .single_add_to_cart_button:hover {
+    background-color: #d35400;
+}
+
+/* ============================================
+   10. CART PAGE
+============================================ */
+.woocommerce table.shop_table {
+    width:           100%;
+    border-collapse: collapse;
+    margin-bottom:   30px;
+}
+
+.woocommerce table.shop_table th {
+    background-color: var(--primary);
+    color:            var(--white);
+    padding:          15px;
+    text-align:       left;
+    font-family:      var(--font-head);
+}
+
+.woocommerce table.shop_table td {
+    padding:       15px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.woocommerce table.shop_table tr:hover td {
+    background-color: var(--light-gray);
+}
+
+/* ============================================
+   11. CHECKOUT PAGE
+============================================ */
+.woocommerce form .form-row label {
+    font-weight:   600;
+    margin-bottom: 5px;
+    display:       block;
+    color:         var(--primary);
+}
+
+.woocommerce form .form-row input,
+.woocommerce form .form-row select,
+.woocommerce form .form-row textarea {
+    width:         100%;
+    padding:       12px 15px;
+    border:        1px solid var(--border);
+    border-radius: var(--radius);
+    font-family:   var(--font-body);
+    font-size:     1rem;
+    transition:    var(--transition);
+}
+
+.woocommerce form .form-row input:focus,
+.woocommerce form .form-row select:focus {
+    outline:      none;
+    border-color: var(--secondary);
+    box-shadow:   0 0 0 3px rgba(230,126,34,0.1);
+}
+
+/* Place Order Button */
+#place_order {
+    background-color: var(--accent);
+    color:            var(--white);
+    padding:          15px 40px;
+    border-radius:    var(--radius);
+    font-size:        1.1rem;
+    font-weight:      700;
+    border:           none;
+    cursor:           pointer;
+    width:            100%;
+    transition:       var(--transition);
+}
+
+#place_order:hover {
+    background-color: #219a52;
+}
+
+/* ============================================
+   12. RESPONSIVE WOOCOMMERCE
+============================================ */
+@media ( max-width: 768px ) {
+
+    .woocommerce ul.products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .woocommerce div.product {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media ( max-width: 480px ) {
+
+    .woocommerce ul.products {
+        grid-template-columns: 1fr;
+    }
+}

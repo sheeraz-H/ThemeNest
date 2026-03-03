@@ -11,13 +11,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function mytheme_setup() {
 
-    // Title tag support
+    // Title tag
     add_theme_support( 'title-tag' );
 
     // Featured images
     add_theme_support( 'post-thumbnails' );
 
-    // HTML5 support
+    // HTML5
     add_theme_support( 'html5', array(
         'search-form',
         'comment-form',
@@ -34,7 +34,7 @@ function mytheme_setup() {
         'flex-height' => true,
     ) );
 
-    // WooCommerce support
+    // WooCommerce
     add_theme_support( 'woocommerce' );
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
@@ -45,5 +45,26 @@ function mytheme_setup() {
         'primary-menu' => __( 'Primary Menu', 'my-custom-theme' ),
         'footer-menu'  => __( 'Footer Menu', 'my-custom-theme' ),
     ) );
+
+    // Image sizes for book covers
+    add_image_size( 'book-cover',      300, 400, true );
+    add_image_size( 'book-cover-large', 600, 800, true );
+    add_image_size( 'book-thumb',      150, 200, true );
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
+
+// Remove WooCommerce breadcrumb (optional)
+add_filter( 'woocommerce_breadcrumb_defaults', function( $defaults ) {
+    $defaults['delimiter'] = ' &rsaquo; ';
+    return $defaults;
+} );
+
+// Change WooCommerce shop columns to 3
+add_filter( 'loop_shop_columns', function() {
+    return 3;
+} );
+
+// Show 12 products per page
+add_filter( 'loop_shop_per_page', function() {
+    return 12;
+} );
