@@ -1,0 +1,68 @@
+=== Powder ===
+Contributors: bgardner
+Requires at least: 6.9
+Tested up to: 6.9
+Requires PHP: 7.4
+Stable tag: 2.0
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+== Description ==
+
+The premier block theme for WordPress designers and agencies.
+
+Powder is distributed as open-source software under the GPL, but it is offered commercially as a professionally curated and maintained theme.
+Purchasing Powder supports ongoing development, updates, documentation, and long-term stewardship of the design system.
+
+== Community ==
+
+For WordPress designers and agencies using the Powder block theme. Share tips, find tutorials, and learn how to build stunning, high-performance websites.
+Join the community: https://www.reddit.com/r/PowderTheme/
+
+== Copyright ==
+
+Powder WordPress theme, (C) 2006-2026 Brian Gardner.
+Powder is distributed under the terms of the GNU GPL.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+== Font ==
+
+The included font is licensed under the SIL Open Font License, Version 1.1.
+License URL: https://openfontlicense.org/open-font-license-official-text/
+
+Google Sans Flex Font
+https://fonts.google.com/specimen/Google+Sans+Flex
+
+== Sample Images ==
+
+The following images are self-designed and declared under GPL License, Version 3.0.
+License URL: https://www.gnu.org/licenses/gpl-3.0.html
+
+sample-avatar-dark.svg
+sample-avatar-light.svg
+sample-image-dark.svg
+sample-image-light.svg
+sample-logo-dark.svg
+sample-logo-light.svg
+site-logo-dark.svg
+site-logo-light.svg
+
+== Sample Icons ==
+
+The following icons are available through Google Material Icons and declared under Apache Open Source License, Version 2.0.
+License URL: https://www.apache.org/licenses/LICENSE-2.0
+
+icon-circle-bolt.svg
+icon-circle-check.svg
+icon-circle-x.svg
+icon-quote-bottom.svg
+icon-quote-top.svg
